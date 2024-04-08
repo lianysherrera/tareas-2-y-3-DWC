@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo A</title>
+    <style>
+            #wrapper{width: 50%; margin:0 auto}
+            main{display:flex; align-items: center;}
+            img{width: 15%;}
+            li {text-align:center; padding:2%;list-style-type: none; padding: 5% 0; border:1px solid #000}
+            ul, #emparejar{width: 29%; float:left;}
+            footer{clear:both;text-align:center}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <h1>Modelo A Desarrollo en Entorno Cliente</h1>
+        <h2>Juego de relacionar</h2>
+        <p>Relaciona los iconos de la izquierda con las palabras de la derecha</p>
+        <p><strong>Instrucciones:</strong><br/>
+        1-Haz click sobre uno de los iconos<br/>
+        2-Haz click sobre la palabra de la derecha con la que crees que está relacionado<br/>
+        Verás si has acertado o no<br/>
+        Tienes 6 intentos, ¡suerte!
+       </p>
+    </header>
+       <main>
+        <ul id="iconos">
+            <li><img src="imagen2.png"/></li>
+            <li><img src="imagen4.png"/></li>
+            <li><img src="imagen3.png"/></li>
+            <li><img src="imagen1.png"/></li>
+        </ul>
+        <ul id="palabras">
+            <li>JavaScript</li>
+            <li>CSS3</li>
+            <li>HTML5</li>
+            <li>Figma</li>
+        </ul>
+    </main>
+    <footer>
+        <p>Intentos: <span>0</span> </p>
+        <input type="button" value="ver Solución">
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación DWC</title>
+    <style>
+        #teclado{width: 35%;display:none;}
+        ul{list-style-type: none;}
+        li{display:inline}
+        .ojo{width: 3%;}
+        .oculto{display:none;}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Recuperación Desarrollo en Entorno Cliente</h1>
+            <h2>Simulador de Bizum</h2>
+            <p>Vamos a ver si saldamos deudas...</p>
+        </header>
+           <main>
+            <form>
+                <input type="text" placeholder="inserta aqui tu DNI" required/>
+                <input type="password" name="ans"  placeholder="inserta aqui tu clave" required/>
+                <img class="ojo" src="ojo.png"/>
+                <img class="ojo oculto" src="oculto.png"/>
+                <section id="teclado">
+                <ul>
+                    <li><img src="imagen0.png" onclick="document.getElementsByName('ans')[0].value += '0'" /></li>
+                    <li><img src="imagen1.png" onclick="document.getElementsByName('ans')[0].value += '1'"/></li>
+                    <li><img src="imagen2.png" onclick="document.getElementsByName('ans')[0].value += '2'"/></li>
+                    <li><img src="imagen3.png" onclick="document.getElementsByName('ans')[0].value += '3'"/></li>
+                    <li><img src="imagen4.png" onclick="document.getElementsByName('ans')[0].value += '4'"/></li>
+                    <li><img src="imagen5.png" onclick="document.getElementsByName('ans')[0].value += '5'"/></li>
+                    <li><img src="imagen6.png" onclick="document.getElementsByName('ans')[0].value += '6'"/></li>
+                    <li><img src="imagen7.png" onclick="document.getElementsByName('ans')[0].value += '7'"/></li>
+                    <li><img src="imagen8.png" onclick="document.getElementsByName('ans')[0].value += '8'"/></li>
+                    <li><img src="imagen9.png" onclick="document.getElementsByName('ans')[0].value += '9'"/></li>
+                </ul>
+                </section>
+            <section>
+                <input type="submit" id="entrar" value="entrar"/>
+            </section>   
+           </form>
+            
+        </main>
+<script src="script.js"></script>
+</body>
+</html>
